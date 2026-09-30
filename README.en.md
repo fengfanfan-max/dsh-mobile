@@ -212,7 +212,7 @@ Revoking a device permanently deletes its durable record and token digest instea
 
 ## Third-party plugin compatibility
 
-The bundle includes the independently switchable `dsh-mobile-question-fixes` component, enabled by default. Disable it in DSH's plugin component list to restore the stock card immediately. Long questions, options, and footer actions share the card's scroll area; ordinary touch Enter retains its newline. DSH continues to own answer drafts.
+The development branch adds the independently switchable `dsh-mobile-question-fixes` component; the published 0.5.2 package does not contain it yet. It is enabled by default and can be disabled in DSH's plugin component list to restore the stock card immediately. Long questions, options, and footer actions share the card's scroll area; ordinary touch Enter retains its newline. DSH continues to own answer drafts.
 
 The mobile adaptation keeps DSH's existing Workspace, task-management, terminal, and file-panel entry points instead of isolating third-party plugin content in a separate page. The wide-layout screenshot below shows the Android app in a wide viewport. The app adapts to the available width: phones use drawers and overlays, while wide screens use side-by-side panels; both layouts expose the same features and connection methods. DSH still loads third-party plugins itself—the mobile layer only adapts layout and access, without modifying DeepSeek Harness source.
 
